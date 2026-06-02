@@ -39,7 +39,13 @@ st.latex('\int_a^b f(x)dx')
 st.image("./data/고양이.jpg", caption="고양이", width=300)
 
 '### :orange[동영상: st.video()]'
+
 video_file = open("./data/산.mp4", "rb")
+video_bytes = video_file.read()
+
+st.video(video_bytes)
+
+st.divider()
 
 '### :orange[Pandas 데이터프레임]'
 import pandas as pd
